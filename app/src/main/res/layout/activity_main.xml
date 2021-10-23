@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Calculadora"
         android:padding="16dp"
+        android:text="Calculadora"
         android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        android:checkedButton="@id/Soma"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Number2">
@@ -32,33 +33,29 @@
             android:id="@+id/Soma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
             android:padding="8dp"
-            android:text="Soma" />
+            android:text="@string/soma" />
 
         <RadioButton
             android:id="@+id/Subtracao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
             android:padding="8dp"
-            android:text="Subtração" />
+            android:text="@string/subtra_o" />
 
         <RadioButton
-            android:id="@+id/Multiplicao"
+            android:id="@+id/Multiplicacao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
             android:padding="8dp"
-            android:text="Multiplicação" />
+            android:text="@string/multiplica_o" />
 
         <RadioButton
             android:id="@+id/Divisao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
             android:padding="8dp"
-            android:text="Divisão" />
+            android:text="@string/divis_o" />
     </RadioGroup>
 
     <TextView
@@ -67,8 +64,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
-        android:text="Resultado"
         android:padding="8dp"
+        android:text="@string/resultado"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Calculadora" />
@@ -100,6 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="48dp"
+        android:onClick="radiobuttonclicked"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

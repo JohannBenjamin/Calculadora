@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Calculadora</string>
+    <string name="resultado">Resultado</string>
+    <string name="soma">Soma</string>
+    <string name="subtra_o">Subtração</string>
+    <string name="multiplica_o">Multiplicação</string>
+    <string name="divis_o">Divisão</string>
 </resources>
